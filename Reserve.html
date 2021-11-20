@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang = "en">
+<link rel = "stylesheet" type = "text/css" href = "Travel.css"> 
+<head>
+<script type="text/javascript" src="TravelScript.js"></script>
+<Title>Golden Moon</Title>    
+</head>
+    
+<body>
+    
+    <h1 id = "h1"></h1>
+    
+    <div class = "search">
+        <object align = right>
+            <form method = "Post" action = "#">
+            <input type = "text" name = "search" placeholder="Search Here">
+                <input type = "submit" value ="Search">
+            </form>
+            </object>
+        </div>
+    
+     <div id = "navbox">
+     <div id ="nav">
+  <nav> 
+     <center>
+      <button class = "button" > <a href= "index.html"> Home </a></button>
+      <button class = "button" > <a href= "Locations.html"> Locations </a> </button> 
+      <button class = "button" > <a href= "Book.html"> Book </a> </button>
+      <button class = "button" > <a href= "Activities.html"> Activities </a></button>
+      <button class = "button" > <a href= "Feedback.html"> Feedback </a> </button> 
+      <button class = "button" ><a href= "ContactUs.html"> Contact Us </a></button>
+     </center>
+    </nav>
+        </div>
+        </div>
+    <h2 id = "box2"> Reserve </h2>
+    
+<div>
+    <form method="post">
+        <fieldset><legend><h3>Please enter your information here:</h3></legend>
+            <p id="col">*Required</p>
+            <div id="cen2">
+                
+        <div class = "inputcont">
+        <label>First Name* </label>
+        <input class = "Reyam" type="text" id = "Fname" name ="fname" required>
+        </div>
+                
+        <div class = "lname">
+        <label>Last Name* </label>
+        <input class = "Reyam" type="text" id = "Lname" name ="Lname" required>
+        </div>
+                
+        <div class = "inputcont">
+        <label>From City </label>
+            <select class = "Reyam" size="1" name="From_City" id="From_City">
+                      <option>Select Your City</option>
+                      <option value="Cairo">Cairo</option>
+                      <option value="Alex">Alexandria</option>
+                      <option value="Giza">Giza</option>
+                      <option value="Fayoum">Fayoum</option>
+                      <option value="Mansoura">Mansoura</option>
+                      <option value="PortS.">Port Said</option>
+             </select>
+        </div>
+                
+        <div class = "tocity">
+        <label>To City* </label> 
+            <select class = "Reyam" name="To_City" id="To_City" required size="1">
+                      <option>Select Your City</option>
+                      <option value="Cairo">Cairo</option>
+                      <option value="Alex">Alexandria</option>
+                      <option value="Fayoum">Fayoum</option>
+                      <option value="Sharm">Sharm El-Sheikh</option>
+                      <option value="Hurghada">Hurghada</option>
+                      <option value="Luxor">Luxor and Aswan</option>
+            </select>
+        </div>
+        
+        <div class = "inputcont">
+        <label>Departure Date* </label> 
+        <input class = "Reyam" type = "date" id = "Ddate" name = "Ddate" required>
+        </div>
+        
+        <div class = "Rdate">
+        <label>Return Date* </label> 
+        <input class = "Reyam" type = "date" id = "Rdate" name = "Rdate" required>
+        </div>
+        
+        <div class = "inputcont">
+        <label>Account Password* </label>
+        <input class = "Reyam" type="password" id="pass" name="pass" maxlength="15" required> 
+        </div>
+        
+        <div class = "cpass">
+        <label>Confirm Password* </label>
+        <input class = "Reyam" type="password" id="pass" name="pass" maxlength="15" required><p id="col">(15 characters only)</p>
+        </div>
+                
+        <div class = "inputcont">
+        <label>Number of Members* </label>
+        <input class = "Reyam" type="number" id="Family" name="fam" min = "1" max = "10" required>
+        </div>
+           
+        <div class="pay">
+        <label>Payment Method*</label>
+                <input type="radio" name="payment" id="cash" value="cash">Cash
+            <br>
+                <input type="radio" name="payment" id="credit" value="credit">Credit 
+        </div>
+                
+        <div class = "inputcont">
+        <label>E-mail* </label>
+        <input id = "extra" class="field" type="email" id="email" name ="email" required>
+        </div>
+                
+        <div class = "inputcont">
+        <label>Phone Number </label>
+        <input id = "extra" class="field" type ="text" id = "Phone" name="phone">
+        </div>
+            
+        <div class ="cont">
+        <label>How to Contact </label>
+            <br>
+            <input type="checkbox" name="bymail" id="bymail" value="mail">By Mail 
+            
+            <input type="checkbox" name="byphone" id="byphone" value="phone">By Phone 
+        </div>
+        
+        <div class = "inputcont">
+        <label>Comments </label>
+        <textarea class="field" name = "myComments" id = "myComments" placeholder="Please inform us for any extra comments" rows="4" cols="60" required></textarea>
+        </div>
+                
+        <button type="submit" class="bton"><a href = "Done.html">Book</a></button>
+                
+            
+        <button type="reset" class="bton">Reset</button>
+                
+                
+<button class="bton" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Cancel</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      
+      <p>Are you sure you want to cancel</p>
+    </div>
+
+    <div class="container">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button class = " button2" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">yes</button>
+      &nbsp&nbsp
+      <button class = " button2" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">no</button>
+    </div>        
+   
+            
+            
+        
+    </form>
+        </div>
+</div>
+        </fieldset>
+    <footer>
+            <img src="MainLogo.png" alt="Logo" width = "80px" height = "80px">
+        <br>
+        <br>
+         <a href="https://www.instagram.com/golden_moon_tourism">
+  <img src="Instagram2.png" alt="Instagram Page" style="width:42px;height:42px;border:0;">
+</a> &nbsp;
+        <a href="https://www.facebook.com/Golden-Moon-110612707285235/?modal=admin_todo_tour">
+  <img src="facebook.png" alt="Facebook page" style="width:42px;height:42px;border:0;">
+</a>&nbsp;
+        <a href="https://www.twitter.com/golden_moon2020">
+  <img src="twitter.png" alt="Twitter Page" style="width:42px;height:42px;border:0;">
+</a>&nbsp;
+        <a href="mailto:goldenmaoon3001@gmail.com">
+  <img src="gmail.png" alt="Gmail" style="width:42px;height:42px;border:0;">
+</a>
+            <div><p> Advertise &nbsp;
+                <a href="ContactUs.html">Contact Us</a>
+                <br>
+                Privacy &nbsp; Cookie Preferences &nbsp; Terms of use 
+                <br></p>
+            </div>
+       
+            <p>Copyrights &copy; 2020 Golden Moon rights reserved .</p> 
+        
+    </footer>
+    
+</body>
+    
+</html>
